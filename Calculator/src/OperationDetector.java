@@ -22,7 +22,8 @@ public class OperationDetector {
                 return new Fibonacci();
             case "sin":
                 return new Sinus();
-            case "*":
+            case "!":
+                return new Factorial();
             default:
                 return new EmptyOperator();
         }

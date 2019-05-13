@@ -4,7 +4,7 @@ public class Factorial implements IUnaryOp{
         for (int i = 2; i<=number1; i++){
             result *=i;
         }
-        return number1;
+        return result;
     }
 
 }

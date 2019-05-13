@@ -5,8 +5,11 @@ public class Main {
         Parser parser = new Parser();
         System.out.println("Enter expression");
         Scanner scanner = new Scanner(System.in);
-        String expression = scanner.nextLine();
-        int result = parser.parseExpression(expression);
-        System.out.println(result);
+        String expression = new String();
+        while(!expression.equals("exit")) {
+            expression = scanner.nextLine();
+            int result = parser.parseExpression(expression);
+            System.out.println(result);
+        }
     }
 }
